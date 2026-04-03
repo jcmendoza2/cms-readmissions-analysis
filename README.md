@@ -1,6 +1,7 @@
 <h1>Hospital Readmissions Risk Analysis</h1>
 CMS Hospital Readmissions Reduction Program (HRRP) - July 2021 through Jun 2024
 
+***End-to-End Data Analytics Project***
 --------------------------------------------------------------------------
 
 <h2>Problem Statement:</h2>
@@ -12,7 +13,7 @@ Hospital's performances are measured by Excess Readmission Ratio (ERR) which is 
 This project analyzes the most recent HRRP dataset released to answer multiple core business questions that a hospital operations team, policy analyst, or healthcare consultant would actually need answered. 
 
 --------------------------------------------------------------------------
-**Pipeline**
+**Pipeline**: ETL Pipeline
 
 **Raw Excel (data.cms.gov) -> Python (script/cleaning) -> SQLite (SQL analysis) -> Power BI (dashboard)**
 
