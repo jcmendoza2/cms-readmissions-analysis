@@ -19,7 +19,7 @@ This project analyzes the most recent HRRP dataset released to answer multiple c
 --------------------------------------------------------------------------
 **Dataset** - each row represents one hospital's performance on ONE condition. Hospitals with fewer than a minimum number of cases are suppressed by CMS and marked as "Too Few to Report"
 
-**| Attribute | Detail |**
+| Attribute | Detail |
 | --- | --- |
 | Source | CMS Hospital Readmissions Reduction Program |
 | Released | Feb. 25, 2026; Last modified: Jan. 26, 2026 |
@@ -78,7 +78,7 @@ The raw Excel file required several cleaning decisions before analysis. Some iss
 
 The 1.09 threshold for high risk corresponds to the 90th percentile of hospital ratios and approximately 1 standard deviation above the mean making it statistically and practically meaningful (not arbitrary).
 
-**| Metric | Value |**
+| Metric | Value |
 | --- | --- |
 | Min ratio | 0.4689 |
 | Max ratio | 1.6297 |
@@ -103,7 +103,7 @@ The interactive dashboard built in Power BI allows stakeholders to filter all fo
 
 --------------------------------------------------------------------------
 **Tools Used - Summary**
-**| Tool | Purpose |**
+| Tool | Purpose |
 | --- | --- |
 | Excel | Raw data source (data.cms.gov) |
 | Python (pandas) | Data cleaning, type conversion, null flagging, SQLite loading |
