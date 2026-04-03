@@ -39,8 +39,10 @@ The raw Excel file required several cleaning decisions before analysis. Some iss
 - All column names were renamed to SQL friendly snake_case conditions
 
 **Clean Script** : cms_clean_script.py: After cleaning, the dataset was loaded into a SQLite database (cms_readmissions.db) for SQL analysis
+
 --------------------------------------------------------------------------
 **SQL Business Questions** : cms_queries.sql
+
 --
 ***Q1*** was focused on state risk rankings, asking which states have the worst readmission rates (can be toggled based on selected conditions) as operations or policy teams could possibly use this to prioritize where to focus statewide intervention resources.
 
@@ -98,6 +100,7 @@ The 1.09 threshold for high risk corresponds to the 90th percentile of hospital 
 ![CMS Readmissions Dashboard](images/cms_dashboard_jcmendoza.jpg)
 
 The interactive dashboard built in Power BI allows stakeholders to filter all four visuals simultaneously by condition(s) using the slicer buttons at the top. This enables condition specific analysis without building separate reports.
+
 --------------------------------------------------------------------------
 **Tools Used - Summary**
 **| Tool | Purpose |**
