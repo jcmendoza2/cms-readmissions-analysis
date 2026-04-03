@@ -19,15 +19,16 @@ This project analyzes the most recent HRRP dataset released to answer multiple c
 --------------------------------------------------------------------------
 **Dataset** - each row represents one hospital's performance on ONE condition. Hospitals with fewer than a minimum number of cases are suppressed by CMS and marked as "Too Few to Report"
 
-**Attribute                   |               Detail**
---------------------------------------------------------------------------
-Source                      |  CMS Hospital Readmissions Reduction Program <br>
-Released                    |  Feb. 25, 2026 | Last modif: Jan. 26, 2026 <br>
-Measurement Period          |  July 1, 2021 - June 30, 2024 <br>
-Total Rows                  |  18,330 <br>
-Hospitals                   |  3,055 Unique Facilities <br>
-States                      |  51 (including DC) <br>
-Conditions Tracked          |  Heart Attack, Heart Failure, Pneumonia, COPD, Hip/Knee Replacement, Bypass Surgery (CABG) <br>
+**| Attribute | Detail |**
+| --- | --- |
+| Source | CMS Hospital Readmissions Reduction Program |
+| Released | Feb. 25, 2026; Last modified: Jan. 26, 2026 |
+| Measurement Period | July 1, 2021 - June 30, 2024 |
+| Total Rows | 18,330 |
+| Hospitals | 3,055 Unique Facilities |
+| States | 51 (including DC) |
+| Conditions Tracked | Heart Attack, Heart Failure, Pneumonia, COPD, Hip/Knee Replacement, Bypass Surgery (CABG) |
+
 --------------------------------------------------------------------------
 **Data Cleaning - Python**
 
@@ -75,13 +76,14 @@ The raw Excel file required several cleaning decisions before analysis. Some iss
 
 The 1.09 threshold for high risk corresponds to the 90th percentile of hospital ratios and approximately 1 standard deviation above the mean making it statistically and practically meaningful (not arbitrary).
 
-**Metric                      |               Value**
---------------------------------------------------------------------------
-Min ratio                   |   0.4689 <br>
-Max ratio                   |   1.6297 <br>
-Mean ratio                  |   1.0018 <br>
-% penalized (ratio > 1.0)   |   48.1% <br>
-% high risk (ratio > 1.09)  |   10.4% <br>
+**| Metric | Value |**
+| --- | --- |
+| Min ratio | 0.4689 |
+| Max ratio | 1.6297 |
+| Mean ratio | 1.0018 |
+| % penalized (ratio > 1.0) | 48.1% |
+| % high risk (ratio > 1.09) | 10.4% |
+
 --------------------------------------------------------------------------
 ***Key Findings:***
 - Nearly 1 in 2 US hospitals (48.1%) are currently being penalized by CMS for excess readmissions across at least one condition 
@@ -98,13 +100,13 @@ Mean ratio                  |   1.0018 <br>
 The interactive dashboard built in Power BI allows stakeholders to filter all four visuals simultaneously by condition(s) using the slicer buttons at the top. This enables condition specific analysis without building separate reports.
 --------------------------------------------------------------------------
 ***Tools Used - Summary ***
-**Tool                    |               Purpose**
---------------------------------------------------------------------------
-Excel                   |   Raw data source (data.cms.gov)
-Python (pandas)         |   Data cleaning, type conversion, null flagging,
-                        |   SQLite loading
-SQLite/DB Browser       |   SQL query development and business analysis
-Power BI Desktop        |   Interactive dashboard and data visualization
-GitHub                  |   Portfolio hosting and project documentation
+**| Tool | Purpose |**
+| --- | --- |
+| Excel | Raw data source (data.cms.gov) |
+| Python (pandas) | Data cleaning, type conversion, null flagging, SQLite loading |
+| SQLite / DB Browser | SQL query development and business analysis |
+| Power BI Desktop | Interactive dashboard and data visualization |
+| GitHub | Portfolio hosting and project documentation |
+
 --------------------------------------------------------------------------
 **Created by Jacqueline Mendoza - [linkedin.com/in/jcmendoza2] - 2026**
